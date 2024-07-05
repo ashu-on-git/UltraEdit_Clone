@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UltraEdit Clone</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        /* border: 2px solid; */
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 30px;
+        grid-column: 2/3;
+      }
+      .box:hover {
+        color: rgba(0, 0, 0, 0.546);
+      }
+      .logo {
+        height: 50px;
+        margin-right: auto;
+        border-radius: 3px;
+      }
+      .logo2 {
+        border-radius: 25px;
+      }
+      .logo2:hover {
+        scale: 1.1;
+      }
+      h1 {
+        text-align: center;
+        margin: 30px;
+      }
+      p {
+        text-align: center;
+        margin: 30px;
+      }
+      .main_button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .mac_button {
+        background-color: #16b2e1;
+        border-style: none;
+        border-radius: 5px;
+        padding: 10px;
+        color: white;
+        font-size: 9px;
+        font-weight: bolder;
+        transition: scale 200ms ease-out;
+        text-decoration: none;
+      }
+      .mac_button:hover {
+        background-color: #057ca0;
+        scale: 1.1;
+        cursor: pointer;
+      }
+      .area {
+        display: grid;
+        grid-template-columns: 220px 220px 220px;
+        grid-template-rows: 150px 150px 150px;
+        justify-items: center;
+        align-items: center;
+      }
+      .mainbox {
+        display: flex;
+        justify-content: center;
+        margin: 50px 0 0 0;
+      }
+      .downloads {
+        background-color: #f6f9f9;
+        height: 120px;
+        width: 200px;
+        transition: scale 200ms ease-out;
+        border-radius: 3px;
+      }
+      .downloads:hover {
+        scale: 1.1;
+      }
+
+      .downloads div {
+        display: flex;
+        justify-content: space-around;
+      }
+      .downloads div .bit {
+        font-size: 10px;
+        padding: 5px;
+        height: 25px;
+        border-style: none;
+        color: white;
+        border-radius: 3px;
+        font-weight: bolder;
+        cursor: pointer;
+      }
+      .downloads div {
+        object-position: bottom;
+      }
+      .languages {
+        text-align: center;
+        font-weight: bolder;
+      }
+      .sbit {
+        background-color: #16b2e1;
+      }
+      .lbit {
+        background-color: rgb(28, 207, 90);
+      }
+      .sbit:hover {
+        background-color: #057ca0;
+      }
+      .lbit:hover {
+        background-color: rgb(7, 148, 56);
+      }
+
+      @media screen and (max-width: 700px) {
+        .area {
+          display: flex;
+          flex-direction: column;
+          row-gap: 30px;
+        }
+      }
+      .header {
+        display: grid;
+        grid-template-columns: 15% auto 15%;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="logo"><img src="image2.jpg" class="logo" /></div>
+        <div class="box">Products</div>
+        <div class="box">Pricing</div>
+        <div class="box">Resources</div>
+        <div class="box">About Us</div>
+        <div class="logo2"><svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px" fill="#5f6368"><path d="m476-80 182-480h84L924-80h-84l-43-122H603L560-80h-84ZM160-200l-56-56 202-202q-35-35-63.5-80T190-640h84q20 39 40 68t48 58q33-33 68.5-92.5T484-720H40v-80h280v-80h80v80h280v80H564q-21 72-63 148t-83 116l96 98-30 82-122-125-202 201Zm468-72h144l-72-204-72 204Z"/></svg></div>
+      </div>
+    </div>
+    <main>
+      <h1 class="head">Download UltraEdit for Windows</h1>
+      <p class="content">
+        Download and try UltraEdit before you buy it! This download includes the
+        full Windows version of the text editor.
+      </p>
+    </main>
+    <div class="main_button">
+      <button class="mac_button">
+        <a href="text.exe">DOWNLOAD MAC OR LINUX VERSION</a>
+      </button>
+    </div>
+
+    <div class="mainbox">
+      <div class="area">
+        <div class="downloads item1">
+          <p class="languages">English</p>
+          <div>
+            <button class="bit sbit">
+              <a href="text.exe">Download 32-bit</a>
+            </button>
+            <button class="bit lbit">
+              <a href="text.exe">Download 64-bit</a>
+            </button>
+          </div>
+        </div>
+        <div class="downloads item2">
+          <p class="languages">German</p>
+          <div>
+            <button class="bit sbit">
+              <a href="text.exe">Download 32-bit</a>
+            </button>
+            <button class="bit lbit">
+              <a href="text.exe">Download 64-bit</a>
+            </button>
+          </div>
+        </div>
+        <div class="downloads item3">
+          <p class="languages">Italian</p>
+          <div>
+            <button class="bit sbit">
+              <a href="text.exe">Download 32-bit</a>
+            </button>
+            <button class="bit lbit">
+              <a href="text.exe">Download 64-bit</a>
+            </button>
+          </div>
+        </div>
+        <div class="downloads item4">
+          <p class="languages">Spanish</p>
+          <div>
+            <button class="bit sbit">
+              <a href="text.exe">Download 32-bit</a>
+            </button>
+            <button class="bit lbit">
+              <a href="text.exe">Download 64-bit</a>
+            </button>
+          </div>
+        </div>
+        <div class="downloads item5">
+          <p class="languages">French</p>
+          <div>
+            <button class="bit sbit">
+              <a href="text.exe">Download 32-bit</a>
+            </button>
+            <button class="bit lbit">
+              <a href="text.exe">Download 64-bit></a>
+            </button>
+          </div>
+        </div>
+        <div class="downloads item6">
+          <p class="languages">Brazilian Portuguese</p>
+          <div>
+            <button class="bit sbit">
+              <a href="text.exe">Download 32-bit</a>
+            </button>
+            <button class="bit lbit">
+              <a href="text.exe">Download 64-bit</a>
+            </button>
+          </div>
+        </div>
+        <div class="downloads item7">
+          <p class="languages">Japanese</p>
+          <div>
+            <button class="bit sbit">
+              <a href="text.exe">Download 32-bit</a>
+            </button>
+            <button class="bit lbit">
+              <a href="text.exe">Download 64-bit</a>
+            </button>
+          </div>
+        </div>
+        <div class="downloads item8">
+          <p class="languages">Korean</p>
+          <div>
+            <button class="bit sbit">
+              <a href="text.exe">Download 32-bit</a>
+            </button>
+            <button class="bit lbit">
+              <a href="text.exe">Download 64-bit</a>
+            </button>
+          </div>
+        </div>
+        <div class="downloads item9">
+          <p class="languages">Chinese</p>
+          <div>
+            <button class="bit sbit">
+              <a href="text.exe">Download 32-bit</a>
+            </button>
+            <button class="bit lbit">
+              <a href="text.exe">Download 64-bit</a>
+            </button>
+          </div>
+        </div>
+        <div class="downloads item10">
+          <p class="languages">Traditional Chinese</p>
+          <div>
+            <button class="bit sbit">
+              <a href="text.exe">Download 32-bit</a>
+            </button>
+            <button class="bit lbit">
+              <a href="text.exe">Download 64-bit</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
