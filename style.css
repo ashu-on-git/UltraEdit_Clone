@@ -12,6 +12,7 @@
 }
 .box:hover {
   color: rgba(0, 0, 0, 0.546);
+  background-color: rgba(65, 65, 65, 0.256);
 }
 .logo {
   height: 50px;
@@ -27,6 +28,9 @@
 h1 {
   text-align: center;
   margin: 30px;
+}
+.reviews{
+  width: 85px;
 }
 p {
   text-align: center;
